@@ -1,0 +1,19 @@
+hub:
+  image: selenium/hub:latest
+  ports:
+  - 4443:4444
+
+chrome1:
+  image: "selenium/node-chrome-debug:latest"
+  ports:
+  - 32768:5900
+  links:
+  - hub
+  shm_size: "1g"
+chrome2:
+  image: "selenium/node-chrome-debug:latest"
+  ports:
+  - 32769:5900
+  links:
+  - hub
+  shm_size: "1g"

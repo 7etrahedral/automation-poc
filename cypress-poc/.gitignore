@@ -1,0 +1,8 @@
+node_modules/
+mochawesome-report/
+cypress/reports/
+screenshots/
+.vscode/
+videos/
+
+cypress.env.json

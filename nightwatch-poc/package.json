@@ -1,0 +1,21 @@
+{
+  "name": "nightwatch-poc",
+  "version": "1.0.0",
+  "description": "selenium poc base on nodejs using nightwatch",
+  "main": "",
+  "scripts": {
+    "test": "npm run test-docker-chrome; npm run report-chrome",
+    "test-docker-chrome": "node_modules/nightwatch/bin/nightwatch --config docker-chrome-conf.js",
+    "report-chrome": "node reports/chrome/create-html-report-chrome.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^5.0.1",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-plugin-import": "^2.13.0"
+  },
+  "dependencies": {
+    "bizzy-nightwatch-base-page": "^2.2.1"
+  }
+}

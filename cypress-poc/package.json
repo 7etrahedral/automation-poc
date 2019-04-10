@@ -1,0 +1,27 @@
+{
+  "name": "cypress-poc",
+  "version": "1.0.0",
+  "description": "POC for Cypress",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "test": "cypress run",
+    "test:chrome": "npm test -- --browser chrome",
+    "test:electron": "npm test -- --browser electron"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^3.1.0",
+    "cypress-cucumber-preprocessor": "^1.0.0",
+    "eslint": "^5.6.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "mocha": "^5.2.0",
+    "mocha-multi-reporters": "^1.1.7",
+    "mochawesome": "^3.0.2"
+  },
+  "dependencies": {
+    "multiple-cucumber-html-reporter": "^1.11.6"
+  }
+}
