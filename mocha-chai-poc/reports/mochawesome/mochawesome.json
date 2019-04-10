@@ -1,0 +1,269 @@
+{
+  "stats": {
+    "suites": 6,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2019-04-10T07:53:26.642Z",
+    "end": "2019-04-10T07:53:26.681Z",
+    "duration": 39,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "success",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "efe02090-e54f-425d-b13b-6d934ce780c8",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "0ba945be-deef-439f-8fef-2cbf08258db1",
+        "title": "@asyncawait GET Request ./get Async Await Style",
+        "fullFile": "/home/wib/workspace/7etrahedral/automation-poc/mocha-chai-poc/tests/async-await-style/api_get_test.js",
+        "file": "/tests/async-await-style/api_get_test.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "GET scenario OK aja",
+            "fullTitle": "@asyncawait GET Request ./get Async Await Style GET scenario OK aja",
+            "timedOut": false,
+            "duration": 11,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "const response = await api.getAPI();\nexpect(response.status).to.equal(cases.scenario.getOK.response);",
+            "err": {},
+            "isRoot": false,
+            "uuid": "229c27b8-bea6-408f-9010-651922eac452",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "229c27b8-bea6-408f-9010-651922eac452"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 11,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 30000
+      },
+      {
+        "uuid": "8f2e2234-2df4-4f2c-8b2a-c71a5af0509b",
+        "title": "POST request ./post Async Await Style",
+        "fullFile": "/home/wib/workspace/7etrahedral/automation-poc/mocha-chai-poc/tests/async-await-style/api_post_test.js",
+        "file": "/tests/async-await-style/api_post_test.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "@asyncawait POST scenario OK aja",
+            "fullTitle": "POST request ./post Async Await Style @asyncawait POST scenario OK aja",
+            "timedOut": false,
+            "duration": 3,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "const response = await api.postAPI(global.testData);\nexpect(response.status).to.equal(cases.scenario.getOK.response);",
+            "err": {},
+            "isRoot": false,
+            "uuid": "54dc9793-bcef-4bf4-a326-505db7b68933",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "54dc9793-bcef-4bf4-a326-505db7b68933"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 3,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 30000
+      },
+      {
+        "uuid": "63c8cbf7-7190-4160-b18a-a2354a9d1e10",
+        "title": "@callback GET Request ./get Callback Style",
+        "fullFile": "/home/wib/workspace/7etrahedral/automation-poc/mocha-chai-poc/tests/callback-style/api_get_test.js",
+        "file": "/tests/callback-style/api_get_test.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "GET scenario OK aja",
+            "fullTitle": "@callback GET Request ./get Callback Style GET scenario OK aja",
+            "timedOut": false,
+            "duration": 2,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "api.getAPI((response) => {\n  expect(response.status).to.equal(cases.scenario.getOK.response);\n  done();\n});",
+            "err": {},
+            "isRoot": false,
+            "uuid": "771a21b8-438f-483d-852f-4671dbaf4e97",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "771a21b8-438f-483d-852f-4671dbaf4e97"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 2,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 30000
+      },
+      {
+        "uuid": "0af539db-b66a-4d23-8ab0-59ab9daab275",
+        "title": "POST request ./post Callback Style",
+        "fullFile": "/home/wib/workspace/7etrahedral/automation-poc/mocha-chai-poc/tests/callback-style/api_post_test.js",
+        "file": "/tests/callback-style/api_post_test.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "@callback POST scenario OK aja",
+            "fullTitle": "POST request ./post Callback Style @callback POST scenario OK aja",
+            "timedOut": false,
+            "duration": 2,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "api.postAPI(global.testData, (response) => {\n  expect(response.status).to.equal(cases.scenario.getOK.response);\n  done();\n});",
+            "err": {},
+            "isRoot": false,
+            "uuid": "124f7c48-3d36-4e15-a17d-baba6d6c542f",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "124f7c48-3d36-4e15-a17d-baba6d6c542f"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 2,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 30000
+      },
+      {
+        "uuid": "d36d84e4-aa6b-45c6-b5e3-ded7a74a2494",
+        "title": "@promise GET Request ./get Promise Style",
+        "fullFile": "/home/wib/workspace/7etrahedral/automation-poc/mocha-chai-poc/tests/promise-style/api_get_test.js",
+        "file": "/tests/promise-style/api_get_test.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "GET scenario OK aja",
+            "fullTitle": "@promise GET Request ./get Promise Style GET scenario OK aja",
+            "timedOut": false,
+            "duration": 1,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "return api.getAPI()\n  .then((response) => {\n    expect(response.status).to.equal(cases.scenario.getOK.response);\n  })\n  .catch(err => Promise.reject(err));",
+            "err": {},
+            "isRoot": false,
+            "uuid": "a751c395-e3c1-4748-a544-2ce9e99e195a",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "a751c395-e3c1-4748-a544-2ce9e99e195a"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 1,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 30000
+      },
+      {
+        "uuid": "4c46acf5-e970-48df-8311-dd8390d543b2",
+        "title": "POST request ./post Promise Style",
+        "fullFile": "/home/wib/workspace/7etrahedral/automation-poc/mocha-chai-poc/tests/promise-style/api_post_test.js",
+        "file": "/tests/promise-style/api_post_test.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "@promise POST scenario OK aja",
+            "fullTitle": "POST request ./post Promise Style @promise POST scenario OK aja",
+            "timedOut": false,
+            "duration": 1,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "return api.postAPI(global.testData)\n  .then((response) => {\n    expect(response.status).to.equal(cases.scenario.getOK.response);\n  })\n  .catch(err => Promise.reject(err));",
+            "err": {},
+            "isRoot": false,
+            "uuid": "896e4521-1e3c-4891-ba32-492f58f59a8e",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "896e4521-1e3c-4891-ba32-492f58f59a8e"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 1,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 30000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 30000
+  },
+  "copyrightYear": 2019
+}
