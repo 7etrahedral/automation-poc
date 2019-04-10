@@ -1,0 +1,27 @@
+{
+  "name": "mocha-chai-poc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.4",
+    "chai": "^4.2.0",
+    "dotenv": "^7.0.0",
+    "supertest": "^4.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "mocha": "^6.1.2",
+    "mochawesome": "^3.1.1"
+  },
+  "scripts": {
+    "test-api": "./node_modules/mocha/bin/mocha ./tests --recursive --reporter mochawesome --reporter-options reportDir=reports/mochawesome/ --timeout 30000"
+  },
+  "author": "",
+  "license": "ISC"
+}
