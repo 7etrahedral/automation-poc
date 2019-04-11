@@ -13,10 +13,8 @@
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.16.0",
     "jest": "^24.7.1",
+    "jest-html-reporters": "^1.1.3",
     "jest-stare": "^1.13.2"
-  },
-  "jest-stare": {
-    "resultDir": "reports"
   },
   "dependencies": {
     "dotenv": "^7.0.0",
