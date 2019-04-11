@@ -5,14 +5,13 @@ const env = require('dotenv').config();
 
 const api = supertest(process.env.API_BASE_URL);
 
-const Path = '/post';
+const Path = '/get';
 
-function postAPI(body) {
-  return api.post(Path)
-    .set('Content-Type', 'application/json')
-    .send(body);
+function getAPI() {
+  return api.get(Path)
+    .set('Content-Type', 'application/json');
 }
 
 module.exports = {
-  postAPI,
+  getAPI,
 };

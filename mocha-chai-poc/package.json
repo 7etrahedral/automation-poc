@@ -20,7 +20,7 @@
     "mochawesome": "^3.1.1"
   },
   "scripts": {
-    "test-api": "./node_modules/mocha/bin/mocha ./tests --recursive --reporter mochawesome --reporter-options reportDir=reports/mochawesome/ --timeout 30000"
+    "test": "./node_modules/mocha/bin/mocha ./tests --recursive --reporter mochawesome --reporter-options reportDir=reports/mochawesome/ --timeout 30000"
   },
   "author": "",
   "license": "ISC"
