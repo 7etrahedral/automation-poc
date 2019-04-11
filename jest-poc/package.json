@@ -15,6 +15,7 @@
     "jest": "^24.7.1"
   },
   "dependencies": {
+    "dotenv": "^7.0.0",
     "supertest": "^4.0.2"
   }
 }

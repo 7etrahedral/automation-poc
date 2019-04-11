@@ -1,10 +1,9 @@
-const supertest = require('supertest');
-
-const api = supertest(process.env.API_BASE_URL);
+const api = require('../page-objects/api_get_request.js');
+const globalData = require('../helper/global');
 
 describe('get test', () => {
-  test('get test 1', () => {
-    const response = api.get('/get');
-    console.log(response);
+  test('get test 1', async () => {
+    const response = await api.getAPI();
+    expect(response.status).toBe(globalData.response.ok);
   });
 });

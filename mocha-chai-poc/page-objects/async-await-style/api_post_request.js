@@ -7,11 +7,11 @@ const api = supertest(process.env.API_BASE_URL);
 
 const Path = '/post';
 
-const postAPI = function (body) {
+function postAPI(body) {
   return api.post(Path)
     .set('Content-Type', 'application/json')
     .send(body);
-};
+}
 
 module.exports = {
   postAPI,
