@@ -7,7 +7,6 @@ This is POC repo for Cypress web automation using Spec and Cucumber-page object
 ### How do I get set up? ###
 
 **1.** Assume that you have node installed.
-If you don't, install latest NVM and Node: https://bizzyid.atlassian.net/wiki/spaces/QE/pages/129007743/Updating+Node.js+Version+using+NVM
 
 **2.** Clone this repo
 

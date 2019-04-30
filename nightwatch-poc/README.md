@@ -6,7 +6,7 @@ This is POC repo for NightwatchJS and Mocha API/web automation using BDD and pag
 
 ### How do I get set up? ###
 
-**1.** Install latest NVM and Node: https://bizzyid.atlassian.net/wiki/spaces/QE/pages/129007743/Updating+Node.js+Version+using+NVM
+**1.** Assume that you have node installed.
 
 **2.** Clone this repo
 
