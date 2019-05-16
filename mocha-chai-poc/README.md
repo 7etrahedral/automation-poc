@@ -2,7 +2,7 @@
 
 ### What is this repository for? ###
 
-This is POC repo for Mocha API
+This is POC repo for API testing using Mocha-Chai
 
 ### How do I get set up? ###
 
