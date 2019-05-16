@@ -2,7 +2,7 @@
 
 ### What is this repository for? ###
 
-This is POC repo for NMocha API
+This is POC repo for Mocha API
 
 ### How do I get set up? ###
 
