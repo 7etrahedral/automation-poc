@@ -19,11 +19,9 @@ or
 $ npm install
 ```
 
-**5.** Install Cypress as global or local
+**5.** Install Cypress as global if needed
 ```sh
 $ npm install cypress -g
-or
-$ npm install cypress --save-dev
 ```
 
 **6.** Copy environment and set the value
